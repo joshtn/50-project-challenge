@@ -13,6 +13,31 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ff7979;
+}
+a:hover {
+  text-decoration: none;
+  color: #ff7979;
+}
+a:focus {
+  text-decoration: none;
+  color: #ff7979;
+}
+a:active {
+  text-decoration: none;
+  color: #ff7979;
+}
+
+li a {
+  display: block;
+}
+
 .container {
   background-color: #fafafa;
   transform-origin: top left;
@@ -41,13 +66,13 @@ body {
   transition: transform 0.5s linear;
 }
 
-.container.show-nav circle {
+.container.show-nav + .circle-container {
   transform: rotate(-70deg);
 }
 
 .circle button {
-  position: absolute;
   cursor: pointer;
+  position: absolute;
   top: 50%;
   left: 50%;
   height: 100px;
@@ -71,7 +96,7 @@ body {
   transform-origin: top left;
 }
 
-.container.show-nav + nav li {
+.container.show-nav ~ nav li {
   transform: translateX(0);
   transition-delay: 0.3s;
 }

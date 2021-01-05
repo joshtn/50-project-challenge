@@ -39,7 +39,7 @@ body {
   /* position: absolute; denna gör så att allt blir osynligt..*/
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 40px;
   margin: 0;
   opacity: 0;
 }

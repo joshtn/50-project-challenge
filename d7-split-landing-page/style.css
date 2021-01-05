@@ -48,7 +48,7 @@ h1 {
   text-transform: uppercase;
   width: 15rem;
   padding: 1.5rem;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease-in-out;
 }
 
 .split.left .btn:hover {
